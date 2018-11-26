@@ -1,52 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>My Style Guide</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
 
-    <!-- Site theme -->
-    <link rel="stylesheet" href="Style.css">
+    .logo img{
+        width: 30%;;
+        height: 250px;
+        margin-top: -40px;
+        float:left;
+    }
 
+    .background img{
+      width: 100%;
+    }
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+    /* Remove the jumbotron's default bottom margin */ 
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    @media screen and (max-width: 992px) {
+  body {
+    background: yellow;
+  }
+  @media screen and (max-width: 600px) {
+  body {
+    background: green;
+  }
+}
+
+  </style>
 </head>
-
 <body>
 
-    <div class="container">
-        <div name ="top" class="topnav">
-                <a class = "leftmargin" href="#">Left Margin</a>
-                <a class ="logo" role = "img" aria-labelledby="star_id" href="https://online.maryville.edu"><img src="Logo.jpg" border="0" Alt="Previous page" ></a>
-                <a class="" href="#Font">Apartment</a>
-                <a class="menu" href="#colorTheme">Business Service</a>
-                <a class="menu" href="#headings">Career</a>
-                <a class="menu" href="#buttons">About</a>
-                <a class="menu" href="#formElements">Contact</a>
-                <a class = "rightmargin" href="#">Right Margin</a>
+<div name ="home" class="jumbotron">
+  <div class="container text-center">
+        <a class ="logo" role = "img" aria-labelledby="star_id" href="#home"><img src="Logo.jpg" border="0" Alt="Previous page" ></a>
+    <h1>Pro Residential Commericial</h1>      
+    <p>Redefined Perfection in Apartment Living</p>
+  </div>
+</div>
 
-        </div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Apartment</a></li>
+        <li><a href="#">Business Services</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-    <div class = "background">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class = "background">
       <a href="#"><img src ="background.jpg"></a>
     </div>
+</nav>
 
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Apartment Example 1</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Text Section 1</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-danger">
+        <div class="panel-heading">Apartment Example 2</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Text Section 2</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-success">
+        <div class="panel-heading">Apartment Example 3</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Text Section 3</div>
+      </div>
+    </div>
+  </div>
+</div><br>
 
+<div class="container">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Apartment Example 4 </div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Text Section 4</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Apartment Example 5 </div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Text Section 5</div>
+      </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading">Apartment Example 6</div>
+        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Text Section 6</div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
 
-
-<section class = "col-1">Image 1</section>
-<section class = "col-2">Text Section 1</section>
-<section class = "col-3">Image 2</section>
-<section class = "col-4">Text Section 2</section>
-<section class = "col-1">Image 3</section>
-<section class = "col-2">Text Section 3</section>
-<section class = "col-3">Image 4</section>
-<section class = "col-4">Text Section 4</section>
-
+<footer class="container-fluid text-center">
+    <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Apartment</a></li>
+        <li><a href="#">Business Services</a></li>
+        <li><a href="#">Career</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+</footer>
 
 </body>
-
 </html>
